@@ -1,42 +1,41 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Project Name
+# Leader Board
 
-> Description the project.
-
+> this simple page is used to store the user and scores, we can learn how to use api with this simple project.
 
 ## Built With
 
-- Major languages
-- Frameworks
-- Technologies used
+- HTML
+- CSS
+- Javascript
+- Api
+- Webpack
+- Microverse linter style code guid
+- git and github (GitFlow guideline)
 
 ## Live Demo (if available)
 
-[Live Demo Link](https://livedemo.com)
-
+[Live Demo Link](https://bahoz-ali.github.io/Leaderboard/)
 
 ## Getting Started
 
-**This is an example of how you may give instructions on setting up your project locally.**
-**Modify this file to match your project, remove sections that don't apply. For example: delete the testing section if the currect project doesn't require testing.**
+### To get a local copy up and running follow these simple example steps.
 
+- git clone git@github.com:bahoz-ali/todo_list.git
 
-To get a local copy up and running follow these simple example steps.
+### to run the project follow these steps
+
+- After you download the project then open the project with your editor.
+- Open terminal with same the project path.
+- Use these command to install all packages `npm install` in the terminal.
+- You can use the webpack server run this command the terminal `npm run start`.
+- You are good to go, see the project on your browser.
 
 ### Prerequisites
 
-### Setup
-
-### Install
-
-### Usage
-
-### Run tests
-
-### Deployment
-
-
+- Install node js
+- Have a code editor
 
 ## Authors
 
