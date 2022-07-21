@@ -1,4 +1,6 @@
 body {
+  color: var(--clr-font);
+  background-color: var(--clr-secondary);
   margin: 0;
   padding: 1rem;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -52,16 +54,24 @@ ul {
 }
 
 .user_list {
-  border: 2px solid #000;
+  border: 2px solid var(--clr-primary);
 }
 
 .user_list .user {
   padding: 0.3rem 0.6rem;
-  background-color: #f1f1f1;
+  background-color: #50c583;
+  color: var(--clr-primary);
+  font-weight: bold;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.user .user__name {
+  width: 7ch;
+  display: inline-block;
 }
 
 .user_list .user:nth-child(even) {
-  background-color: #ddd;
+  background-color: var(--clr-accent);
 }
 
 .dashboard__header {
@@ -86,4 +96,18 @@ ul {
   padding: 0.4rem 0.8rem;
   outline: none;
   border: 1px solid #333;
+}
+
+.btn--primary {
+  color: var(--clr-secondary);
+  background-color: #05396b;
+  outline: none;
+  border: none;
+  border-radius: 2px;
+  transition: all 0.4s linear;
+
+}
+
+.btn--primary:hover {
+  transform: rotate(-10deg)
 }
