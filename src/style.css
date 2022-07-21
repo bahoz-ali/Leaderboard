@@ -4,6 +4,13 @@ body {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+:root {
+  --clr-primary: #05396b;
+  --clr-secondary: #5cdb94;
+  --clr-accent: #8de4af;
+  --clr-font: #edf5e0;
+}
+
 button {
   cursor: pointer;
 }
