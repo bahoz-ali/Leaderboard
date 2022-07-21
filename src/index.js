@@ -5,6 +5,7 @@ const addScoreBtn = document.querySelector('#add_score');
 const userInput = document.querySelector('#user_input');
 const scoreInput = document.querySelector('#score_input');
 const userList = document.querySelector('.user_list');
+const refreshBtn = document.querySelector('#refresh');
 
 const createScoreElement = (user, score) => {
   const li = document.createElement('li');
@@ -18,7 +19,8 @@ const createScoreElement = (user, score) => {
   return li;
 };
 
-addScoreBtn.addEventListener('click', () => {
+
+const saveScore =  () => {
   const user = userInput.value ? userInput.value.trim() : null;
   const score = scoreInput.value ? scoreInput.value.trim() : null;
 
@@ -33,4 +35,39 @@ addScoreBtn.addEventListener('click', () => {
   if (li) userList.appendChild(li);
 
   postNewScore(data);
+
+  userInput.value = '';
+  scoreInput.value = '';
+}
+
+
+const displayAllScores = async () => {
+  const scores = await getAllScores();
+  if (!scores) return;
+
+  userList.innerHTML = '';
+  
+  scores.forEach(({ user, score }) => {
+    if (typeof user === 'string' || typeof score === 'number') {
+      const li = createScoreElement(user, score);
+
+      userList.appendChild(li);
+    }
+  });
+};
+
+
+document.addEventListener('DOMContentLoaded', () => {
+  displayAllScores();
 });
+
+refreshBtn.addEventListener('click', displayAllScores);
+addScoreBtn.addEventListener('click', saveScore);
+
+scoreInput.addEventListener("keyup", (event) => {
+  event.preventDefault();
+
+    if (event.key === "Enter") {
+     saveScore();
+    }
+})

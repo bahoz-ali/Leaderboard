@@ -13,42 +13,27 @@
       <div class="dashboard">
         <div class="dashboard__header">
           <h2>Recent scores</h2>
-          <button class="btn">Refresh</button>
+          <button id="refresh" class="btn">Refresh</button>
         </div>
 
-        <ul class="user_list">
-          <li class="user">
-            <p>
-              <span class="user__name">name</span>
-              <span class="user__score">100</span>
-            </p>
-          </li>
-          <li class="user">
-            <p>
-              <span class="user__name">name</span>
-              <span class="user__score">97</span>
-            </p>
-          </li>
-          <li class="user">
-            <p>
-              <span class="user__name">name</span>
-              <span class="user__score">88</span>
-            </p>
-          </li>
-          <li class="user">
-            <p>
-              <span class="user__name">name</span>
-              <span class="user__score">22</span>
-            </p>
-          </li>
-        </ul>
+        <ul class="user_list"></ul>
       </div>
 
       <div class="new_score">
         <form class="score_form" action="">
           <h2>Add your score</h2>
-          <input class="score_input" id="user_input" type="text" placeholder="your name">
-          <input class="score_input" id="score_input" type="text" placeholder="your score">
+          <input
+            class="score_input"
+            id="user_input"
+            type="text"
+            placeholder="your name"
+          />
+          <input
+            class="score_input"
+            id="score_input"
+            type="text"
+            placeholder="your score"
+          />
           <button class="btn" id="add_score" type="button">Submit</button>
         </form>
       </div>
