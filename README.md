@@ -22,7 +22,7 @@
 
 ### To get a local copy up and running follow these simple example steps.
 
-- git clone git@github.com:bahoz-ali/todo_list.git
+- ```git clone git@github.com:bahoz-ali/todo_list.git```
 
 ### to run the project follow these steps
 

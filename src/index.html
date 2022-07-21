@@ -8,5 +8,35 @@
   </head>
   <body>
     <h1>LeaderBoard</h1>
+
+    <section class="main_section">
+      <div class="dashboard">
+        <div class="dashboard__header">
+          <h2>Recent scores</h2>
+          <button id="refresh" class="btn">Refresh</button>
+        </div>
+
+        <ul class="user_list"></ul>
+      </div>
+
+      <div class="new_score">
+        <form class="score_form" action="">
+          <h2>Add your score</h2>
+          <input
+            class="score_input"
+            id="user_input"
+            type="text"
+            placeholder="your name"
+          />
+          <input
+            class="score_input"
+            id="score_input"
+            type="text"
+            placeholder="your score"
+          />
+          <button class="btn" id="add_score" type="button">Submit</button>
+        </form>
+      </div>
+    </section>
   </body>
 </html>

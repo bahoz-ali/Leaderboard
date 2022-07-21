@@ -1,0 +1,82 @@
+body {
+  margin: 0;
+  padding: 1rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+button {
+  cursor: pointer;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  padding: 0;
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+ul {
+  padding: 0;
+  list-style: none;
+}
+
+/* -------- main section */
+.main_section {
+  display: flex;
+  margin: 2rem 50px 0 50px;
+  padding: 0.3rem 0.9rem;
+  gap: 3rem;
+}
+
+.dashboard {
+  flex: 1.5 0;
+}
+
+.new_score {
+  flex: 2;
+}
+
+.user_list {
+  border: 2px solid #000;
+}
+
+.user_list .user {
+  padding: 0.3rem 0.6rem;
+  background-color: #f1f1f1;
+}
+
+.user_list .user:nth-child(even) {
+  background-color: #ddd;
+}
+
+.dashboard__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.dashboard__header h2,
+.score_form h2 {
+  margin-bottom: 1rem;
+}
+
+.score_form .score_input {
+  display: block;
+  margin-bottom: 1rem;
+}
+
+/* --------- Components ---------- */
+
+.btn {
+  padding: 0.4rem 0.8rem;
+  outline: none;
+  border: 1px solid #333;
+}
