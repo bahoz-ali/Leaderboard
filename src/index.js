@@ -19,8 +19,7 @@ const createScoreElement = (user, score) => {
   return li;
 };
 
-
-const saveScore =  () => {
+const saveScore = () => {
   const user = userInput.value ? userInput.value.trim() : null;
   const score = scoreInput.value ? scoreInput.value.trim() : null;
 
@@ -38,15 +37,14 @@ const saveScore =  () => {
 
   userInput.value = '';
   scoreInput.value = '';
-}
-
+};
 
 const displayAllScores = async () => {
   const scores = await getAllScores();
   if (!scores) return;
 
   userList.innerHTML = '';
-  
+
   scores.forEach(({ user, score }) => {
     if (typeof user === 'string' || typeof score === 'number') {
       const li = createScoreElement(user, score);
@@ -56,7 +54,6 @@ const displayAllScores = async () => {
   });
 };
 
-
 document.addEventListener('DOMContentLoaded', () => {
   displayAllScores();
 });
@@ -64,10 +61,10 @@ document.addEventListener('DOMContentLoaded', () => {
 refreshBtn.addEventListener('click', displayAllScores);
 addScoreBtn.addEventListener('click', saveScore);
 
-scoreInput.addEventListener("keyup", (event) => {
+scoreInput.addEventListener('keyup', (event) => {
   event.preventDefault();
 
-    if (event.key === "Enter") {
-     saveScore();
-    }
-})
+  if (event.key === 'Enter') {
+    saveScore();
+  }
+});

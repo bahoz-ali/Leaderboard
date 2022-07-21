@@ -37,11 +37,11 @@ ul {
 }
 
 .dashboard {
-  flex: 1.5 0 ;
+  flex: 1.5 0;
 }
 
 .new_score {
-  flex: 2 ;
+  flex: 2;
 }
 
 .user_list {
