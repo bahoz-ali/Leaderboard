@@ -37,7 +37,7 @@ ul {
 }
 
 .dashboard {
-  flex: 1;
+  flex: 1.5 0;
 }
 
 .new_score {
